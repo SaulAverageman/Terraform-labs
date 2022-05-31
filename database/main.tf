@@ -11,6 +11,8 @@ provider "aws" {
  region = var.region
 }
 resource "aws_db_instance" "mysqldb" {
+ #rds instance name
+ identifier = var.name
  allocated_storage = var.storage
  engine = var.engine
  engine_version = var.engine_version
