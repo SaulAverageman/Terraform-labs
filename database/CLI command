@@ -1,0 +1,1 @@
+terraform plan/apply -var <varibale_name>=variable_value -var-file=<.tfvars file>
