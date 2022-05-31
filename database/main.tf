@@ -20,4 +20,6 @@ resource "aws_db_instance" "mysqldb" {
  name = var.name
  username = var.username
  password = var.password
+ #prevent final spanshot
+ skip_final_snapshot  = true
 }
